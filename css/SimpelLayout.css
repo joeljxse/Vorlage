@@ -1,49 +1,94 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Chathura|Indie+Flower|Lobster|PT+Sans|Sansita');
 
-* {
-    margin: 0;
-    padding: 0;
+/* 
+    Chathura -- Dezent, Schlicht, Elegant
+    Amatic SC --- very tumblr, handschrift
+    lobster --- kursiv
+    Indie Flower --- handschrift, hobby-mässig --> unprofessionell
+    PT Sans --- straight, computer-typed, professionell
+    Sansita --- eindrucksvoll, Titel
 
-    font-family: 'Roboto' ,'sans-serif';
-    font-size: 1rem;
+    Anwendung:
+	p {
+   		 font-family: 'FONTNAME', sans-serif;   
+	}
+
+
+    Kleiner Bildschirm / Grosser Bildschirm 
+    @media screen and (min-width: 768px) {
+    
+}
+
+*/
+
+*{
+   font-family: 'PT Sans',sans-serif;
 }
 
 body {
-    background-color: #F7F7F7;
-   
-    
-    }
+    background: #eee;
+}
 
 #container {
-    text-align: center;
-    background-color: white;
-    width: 80vw;
-    max-width: 1200px;
-    padding: 30px;
-    margin: 50px;
-     margin-left: auto;
-    margin-right: auto;
-}
+    width: 100%;
+    max-width: 968px;
+    margin: 0 auto;
 
-#nav {
-    border: #CCC 1px solid;
-    width: 20%;
-    float: left;
 }
-
-#nav li {
-    list-style-type: none;
-}
-
 #content {
-    margin-top: 20px;
-    margin-left: 280px;
-    padding: 20px;
-    border: 1px solid gray;
+    
+   
+    margin-top: 5%;
 }
 
-#header {
+article {
+    background-color: white;
+     padding: 1rem;
+    border-radius: 5px;
+    margin: 5% 0;
+}
+#nav {
+    background: #333;
     
-    margin-bottom: 20px;
-    border:  3px dotted darkgray;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+#nav a:hover {
+    background-color: #555;
+
+}
+
+#nav ul {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px){
+
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+   
+
 }
